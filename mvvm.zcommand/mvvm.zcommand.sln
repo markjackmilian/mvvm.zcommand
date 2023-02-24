@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xam.Zero.Commands", "Xam.Zero.Commands\Xam.Zero.Commands.csproj", "{F247BBE4-12FC-458A-8AF2-6229D99EA73D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvvm.zcommand", "mvvm.zcommand\mvvm.zcommand.csproj", "{F247BBE4-12FC-458A-8AF2-6229D99EA73D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

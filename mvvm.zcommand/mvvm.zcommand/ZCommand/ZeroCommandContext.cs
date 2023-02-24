@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Xam.Zero.Commands.ZCommand
+namespace mvvm.zcommand.ZCommand
 {
     public enum ContextBehaviour
     {

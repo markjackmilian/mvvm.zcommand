@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace Xam.Zero.Commands
+namespace mvvm.zcommand
 {
     sealed class WeakEventHandler<TEventArgs>  
     {

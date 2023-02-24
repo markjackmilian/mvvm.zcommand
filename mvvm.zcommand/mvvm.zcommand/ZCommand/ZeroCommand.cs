@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Xam.Zero.Commands.ZCommand
+namespace mvvm.zcommand.ZCommand
 {
     public class ZeroCommand : ZeroCommand<object>
     {
