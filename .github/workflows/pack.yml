@@ -35,5 +35,5 @@ jobs:
         path: mvvm.zcommand/mvvm.zcommand/bin/Release
     
     - name: Push to nuget
-      run: dotnet nuget pushmvvm.zcommand/mvvm.zcommand/bin/Release/mvvm.zcommand.${GITHUB_REF##*/}.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push mvvm.zcommand/mvvm.zcommand/bin/Release/mvvm.zcommand.${GITHUB_REF##*/}.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
     
