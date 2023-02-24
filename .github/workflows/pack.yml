@@ -1,0 +1,39 @@
+name: .NET Core
+
+on:
+  release:
+    types: [created]
+
+
+env:
+    ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 7.x
+        
+    - name: Install dependencies
+      run: dotnet restore mvvm.zcommand/mvvm.zcommand/mvvm.zcommand.csproj
+      
+    - name: Build and Pack
+      run: dotnet pack mvvm.zcommand/mvvm.zcommand/mvvm.zcommand.csproj --configuration Release --no-restore /p:Version=${GITHUB_REF##*/} 
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: xam.zero
+        # Directory containing files to upload
+        path: mvvm.zcommand/mvvm.zcommand/bin/Release
+    
+    - name: Push to nuget
+      run: dotnet nuget pushmvvm.zcommand/mvvm.zcommand/bin/Release/mvvm.zcommand.${GITHUB_REF##*/}.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
+    
