@@ -2,12 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
-        <Title>Xam.Zero.Commands</Title>
+        <Title>mvvm.zcommand</Title>
         <Authors>Marco Milani</Authors>
-        <Description>ZCommand package</Description>
+        <Description>Mvvm commands with many functions</Description>
         <Copyright>Marco Milani</Copyright>
-        <PackageProjectUrl>https://github.com/nightlybuilds-net/Xam.Zero</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/nightlybuilds-net/Xam.Zero</RepositoryUrl>
-        <PackageTags>xam.zero, icommand, mvvm</PackageTags>
+        <PackageProjectUrl>https://github.com/markjackmilian/mvvm.zcommand</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/markjackmilian/mvvm.zcommand</RepositoryUrl>
+        <PackageTags>icommand, mvvm</PackageTags>
     </PropertyGroup>
 </Project>
